@@ -1,0 +1,327 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to replace a window in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A single standard-size aluminium window in Berwick runs $400–$1,200 supplied and installed depending on size, style and glazing. Awning windows sit at the lower end, double-hung and sliding sashes mid-range, large picture windows at the top. Adding double-glazing is an extra $300–$500 per window. Sliding doors run $2,500–$4,000 for a 2.4m two-panel unit, $5,000–$8,000 for a 3.6m three-panel bifold. A typical full-house re-window across 12–15 openings in a 1990s–2010s Berwick home lands at $12,000–$25,000 installed, including removal of the old frames and patch-back of the architraves and reveals." }
+    },
+    {
+      "@type": "Question",
+      "name": "Single-glaze or double-glaze — what's right for a Berwick home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For most City of Casey homes built between 1990 and 2010, the existing single-glaze aluminium frames are the single biggest source of winter heat loss and summer heat gain. Double-glazing (two panes of glass with a sealed air gap) cuts heat transfer by roughly 50–60% over single-glaze. In Berwick's cold winter mornings — where condensation on the inside of single-glazed windows is the giveaway — double-glazing also dramatically reduces internal moisture and the mould that follows. The premium is $300–$500 per window. On a full-house re-window it adds $4,000–$7,000 to the project but pays back in heating-and-cooling savings over 8–12 years, plus quieter rooms (great if you're near Princes Highway, Clyde Road or the freeway) and a more comfortable house every day in between." }
+    },
+    {
+      "@type": "Question",
+      "name": "Aluminium vs timber windows in Berwick — which should I pick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aluminium is the default for nine in ten Berwick replacements: powder-coated frames, slim sightlines, AS 2047 compliant by default, low maintenance, lower price ($400–$1,200/window). Timber windows are the right call for two situations: (1) heritage-period houses in old Berwick where the original cottage windows were timber sash and council planning prefers a like-for-like replacement; (2) high-end new builds where the warm look of solid timber inside is a deliberate design choice. Timber costs roughly 60–100% more than aluminium ($800–$2,400/window) and needs repainting every 8–12 years. We supply both — happy to walk through which suits your house at the on-site measure." }
+    },
+    {
+      "@type": "Question",
+      "name": "Full frame replacement vs glass-only — what's the difference?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Glass-only (or sash-only) replacement is when the existing frame stays and we replace just the glass panes or the operable sash. It's cheaper ($200–$400/window) but only works if the existing frame is structurally sound, the rubber seals are intact, and the frame style is one we can match parts for. Full frame replacement removes the old frame back to the brick reveal or timber stud, fits a new frame, re-seals the perimeter and patches the architraves. It costs more but solves the underlying problem: in 90s–2010s aluminium frames around Berwick the perimeter seals fail first, the powder coat goes chalky next, and the rubber gaskets harden — replacing the glass doesn't fix any of that. About 85% of our Berwick jobs are full frame replacement." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the lead time and install timeline for window replacement in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "From accepted quote to install: 4–8 weeks for standard aluminium windows, 6–10 weeks for double-glazed units, 8–12 weeks for timber. The wait is manufacturing — windows are made to your exact opening measurements after the measure-up, not pulled from a warehouse. The install itself is quick: a single window 1–2 hours, a sliding door 3–4 hours, a full-house re-window of 12–15 windows is 2–4 days on site. We stage it so you're never more than a couple of hours with an opening unsealed — out with the old, in with the new, sealed and patched same day." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are condensation and mould on Berwick windows a window problem or a house problem?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both. The cold-side surface of a single-glazed aluminium window in a Berwick winter morning sits at 3–6°C — well below the dew point of the air inside a heated house. Moisture condenses on the glass, runs down the frame, soaks into the timber reveal and architraves, and mould follows within a season. Double-glazing lifts that cold-side surface temperature to 12–15°C, well above the dew point — the condensation just doesn't form. That's why new builds with double-glazing rarely have window-condensation problems. If your reveals are already water-damaged, we replace those at the same time as the windows; trying to patch over wet timber is a waste of money." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle the AS 2047 compliance and energy ratings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. AS 2047 is the Australian Standard for windows in residential buildings — it covers wind loads, water tightness, glass safety, and operating-force requirements. Every aluminium and timber window we install from Trend, Stegbar, AWS and similar tier-1 manufacturers ships AS 2047 compliant by default, with a stamped compliance certificate we hand over at completion. For new builds and additions we also handle the WERS (Window Energy Rating Scheme) U-value and SHGC numbers your building surveyor needs for the energy report. On straight replacements in existing houses you generally don't need a new energy report unless the council planning team asks for one (rare in Casey for like-for-like swaps)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which brands do you install?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For aluminium we install Trend, Stegbar, AWS (Architectural Window Systems), Wideline and Capral — tier-1 Australian manufacturers with 7–10 year warranties on the frame and 10–20 year on the IGU (insulated glass unit) seal. For timber we mainly use Stegbar Timber and Trend Timber. For sliding-door hardware we standardise on Centor and Brio for bifolds, Schlegel and CMI seals across the board. Brand choice for your job depends on opening size, style and budget — we'll bring sample frames to the measure-up so you can feel the difference in slide action and frame depth before you commit." }
+    }
+  ]
+};
+---
+<Layout
+  title="Berwick Window Replacement | Aluminium, Timber, Sliding & Bifold Doors | (03) 9003 0108"
+  description="Window and sliding-door replacement specialists for Berwick, Cranbourne, Narre Warren, Hampton Park and Endeavour Hills. Aluminium and timber windows, double-glazing upgrades, stacker and bifold doors. AS 2047 compliant. Free measure & quote.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Berwick &middot; Cranbourne &middot; Narre Warren &middot; City of Casey</span>
+      <h1>Berwick&rsquo;s specialist <span class="accent">window &amp; sliding door</span> replacement.</h1>
+      <p class="hero-sub">
+        Powder-coated aluminium and solid-timber windows, stacker sliders and bifold
+        doors. Honest per-window pricing &mdash; from $400 a window for standard
+        aluminium up to $12K&ndash;$25K for a full-house re-window in the City of
+        Casey. Double-glazing upgrades, AS 2047 compliant, 7&ndash;10 year warranty.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free measure &amp; quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>$400&ndash;$1,200</strong>Per aluminium window installed</div>
+        <div><strong>+$300&ndash;$500</strong>To upgrade to double-glaze</div>
+        <div><strong>4&ndash;8 weeks</strong>Lead time from quote to install</div>
+        <div><strong>AS 2047</strong>Code compliant by default</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Honest per-window pricing</span>
+      <h2>What window replacement costs in Berwick.</h2>
+      <p class="section-lead">
+        Most local installers won&rsquo;t put numbers on a website. We will. These
+        are the bands every house in Berwick, Cranbourne and Narre Warren falls
+        into &mdash; the only thing the measure-up changes is which end of the
+        band your job lands at.
+      </p>
+
+      <div style="max-width: 65rem;">
+        <ul style="line-height:1.8;">
+          <li><strong>Single aluminium window (replacement):</strong> $400&ndash;$1,200 installed, depending on size and style</li>
+          <li><strong>Double-glaze upgrade:</strong> +$300&ndash;$500 per window over single-glaze</li>
+          <li><strong>Timber sash or casement window:</strong> $800&ndash;$2,400 installed</li>
+          <li><strong>Sliding door 2.4m two-panel:</strong> $2,500&ndash;$4,000 installed</li>
+          <li><strong>Sliding door 3.6m stacker (3-panel):</strong> $4,500&ndash;$6,500 installed</li>
+          <li><strong>Bifold door 3.6m three-panel:</strong> $5,000&ndash;$8,000 installed</li>
+          <li><strong>Awning window (kitchen / bathroom):</strong> $450&ndash;$900 installed</li>
+          <li><strong>Full-house re-window (12&ndash;15 openings):</strong> $12,000&ndash;$25,000</li>
+        </ul>
+        <p style="margin-top:1.5rem;color:var(--c-muted);">
+          Prices include removal of the existing window, supply of the new
+          AS 2047&ndash;compliant unit from a tier-1 manufacturer (Trend, Stegbar,
+          AWS, Wideline), installation, perimeter sealing and architrave patch-back.
+          Painting of the reveals after install is by your painter unless
+          quoted separately.
+        </p>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Front of home with new window installation" loading="lazy" decoding="async" />
+    <figcaption>Aluminium, UPVC, timber — single or double-glazed.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we install</span>
+      <h2>Five window &amp; door formats.</h2>
+      <p class="section-lead">
+        From a single bathroom awning swap to a 15-window double-glaze re-fit
+        across the whole house. Same crew, same warranty, same installer doing
+        the seal-up.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/aluminium-windows/">
+          <div class="svc-icon" aria-hidden="true">&#9633;</div>
+          <h3>Aluminium windows</h3>
+          <p>Powder-coated frames in sliding, awning, double-hung and fixed-pane formats. The default for Berwick &mdash; slim sightlines, low maintenance, AS 2047 compliant. ~$400&ndash;$1,200 per window.</p>
+          <span class="svc-link">See aluminium windows &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/timber-windows/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Timber windows</h3>
+          <p>Solid timber sash and casement windows for heritage cottages, period homes and high-end new builds. Warm interior look, repaint every 8&ndash;12 years. ~$800&ndash;$2,400 per window.</p>
+          <span class="svc-link">See timber windows &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/sliding-doors/">
+          <div class="svc-icon" aria-hidden="true">&#9646;</div>
+          <h3>Sliding doors</h3>
+          <p>Stacker and standard slide doors from 2m through to 6m openings. The bread-and-butter indoor-outdoor opening for Berwick&rsquo;s new estates. ~$2,500&ndash;$8,000 depending on width.</p>
+          <span class="svc-link">See sliding doors &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/bifold-doors/">
+          <div class="svc-icon" aria-hidden="true">&#9638;</div>
+          <h3>Bifold doors</h3>
+          <p>Concertina-fold openings that stack completely clear &mdash; full alfresco-to-living connection. 3, 4 or 5 panel configurations, 3m to 6m openings. ~$5,000&ndash;$12,000.</p>
+          <span class="svc-link">See bifold doors &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/awning-windows/">
+          <div class="svc-icon" aria-hidden="true">&#9651;</div>
+          <h3>Awning windows</h3>
+          <p>Top-hinged windows that open outward &mdash; can be left open in light rain. Standard for kitchens, bathrooms, laundries and over-bed wall vents. ~$450&ndash;$900 per window.</p>
+          <span class="svc-link">See awning windows &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Casey window specialist</span>
+      <h2>Three things every Berwick window job needs to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>Measure twice, order once.</h3>
+          <p>
+            Windows are made to your exact opening. There&rsquo;s no off-the-shelf
+            stock and no &ldquo;close enough&rdquo; &mdash; a 5mm error means the
+            frame either won&rsquo;t fit or won&rsquo;t seal, and a remake is
+            4&ndash;8 weeks of waiting. We measure every opening twice on the
+            measure-up: once on first walk-through, once after pulling the
+            architraves so we know the true brick or stud reveal, before the
+            order goes to the factory.
+          </p>
+        </div>
+        <div>
+          <h3>Berwick&rsquo;s 1990s&ndash;2010s aluminium stock.</h3>
+          <p>
+            The Berwick / Endeavour Hills / Narre Warren growth corridor was
+            built out hard from the early 90s through to the mid 2010s. Almost
+            every house we&rsquo;re called to has the same builder-spec
+            single-glaze aluminium frames from that era &mdash; powder coat
+            now chalky, rubber gaskets hardened, perimeter sealant cracked,
+            and either condensation streaks on the inside in winter or jammed
+            rollers on the sliders. Full frame replacement (not glass-only) is
+            the right call for that stock. We do these every week.
+          </p>
+        </div>
+        <div>
+          <h3>Brick veneer vs cladded walls.</h3>
+          <p>
+            About 80% of Berwick homes are brick veneer &mdash; brick outer leaf
+            with a timber stud frame behind. The window frame sits in a brick
+            reveal with a sub-sill flashing underneath. Get the flashing wrong
+            and water tracks behind the brick course and into the wall cavity
+            within a winter. The other 20% (Endeavour Hills Lakes, newer
+            Cranbourne East estates) are cladded over timber frame &mdash;
+            different reveal detail, different sealing approach, different
+            architrave detail. We spec the install differently for each.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="Window installer fitting a new double-glazed unit" loading="lazy" decoding="async" />
+    <figcaption>10-year frame warranty, 5-year IGU seal warranty.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we work.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Full City of Casey coverage. Berwick is our home base &mdash;
+        Cranbourne, Narre Warren, Hampton Park and Endeavour Hills are all
+        regular weekly work.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">City of Casey</a>
+        <span class="area-pill area-pill-static">Beaconsfield</span>
+        <span class="area-pill area-pill-static">Berwick East</span>
+        <span class="area-pill area-pill-static">Officer</span>
+        <span class="area-pill area-pill-static">Pakenham</span>
+        <span class="area-pill area-pill-static">Clyde North</span>
+        <span class="area-pill area-pill-static">Cranbourne East</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From phone call to sealed-up windows &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free measure-up</h3><p>On-site visit. Every opening measured twice, frame style and glazing options discussed, architraves checked, brick or cladded reveals noted. 45&ndash;90 minutes.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Fixed quote</h3><p>Written quote per window plus the install total. Brand options (Trend / Stegbar / AWS) priced side by side. Single vs double-glaze priced side by side.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Manufacture</h3><p>4&ndash;8 weeks for aluminium, 6&ndash;10 for double-glazed, 8&ndash;12 for timber. Made to your exact opening, AS 2047 stamped, factory finish.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Install</h3><p>Old frames out, new frames in, perimeter sealed, architraves patched. Single window 1&ndash;2 hrs; full house 12&ndash;15 windows 2&ndash;4 days. House stays weatherproof every night.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Handover</h3><p>AS 2047 compliance certificates, hardware adjusted, slider rollers run-in, manufacturer warranty registered, 7&ndash;10 year coverage on file.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a free measure &amp; quote?</h2>
+        <p>45&ndash;90 minutes on-site. Per-window pricing on the spot. Single vs double-glaze priced both ways.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

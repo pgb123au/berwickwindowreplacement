@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a sliding door cost installed in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard 2.4m two-panel aluminium slider runs $2,500–$4,000 installed. 3.0m two-panel $3,000–$4,500. 3.6m three-panel stacker (two slide, one fixed) $4,500–$6,500. 4.2m three-panel stacker $5,500–$7,500. 4.8m four-panel $6,500–$9,000. Up to 6m custom configurations from $8,000. Add 25–40% for double-glazing, 15–30% for thermally broken frames. Includes removal of the old door, new door supply, install, perimeter sealing and architrave patch-back." }
+    },
+    {
+      "@type": "Question",
+      "name": "Standard slider vs stacker — what's the difference?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard 2-panel slider: one panel fixed, one panel slides — opens half the total width. Standard 3-panel stacker: one fixed, two slide (one behind the other when open) — opens two-thirds of the total width. Standard 4-panel stacker: two fixed in the middle, two slide outward to each side — opens half the total width but full unobstructed view in the middle. For the same total opening width, a stacker gives you more clear opening because more panels slide; the trade-off is more rollers and tracks to maintain. For 2.4m openings a basic 2-panel is fine. For anything 3.6m+ a stacker configuration is usually the right answer." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I upgrade an existing 2.4m slider to a wider opening?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is one of the most common jobs we do in Cranbourne East, Clyde North and newer Berwick estates. The standard 2.4m builder-spec rear door from the 90s and 2000s looks small by current taste. Widening to 3.6m or 4.2m requires removing some brickwork (about 1.2m of wall on a 2.4m → 3.6m upgrade), adding a steel lintel to carry the load above, installing the new track and frame, then patching the brickwork around the new opening. Allow $5,000–$8,000 all-in for the opening modification plus the new door — well below the price of an extension and a huge lifestyle improvement." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do sliding doors compare to bifolds for indoor-outdoor flow?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sliders are cheaper, simpler, more weather-tight, and have slimmer sightlines — but you only ever open the panel-width portion of the opening (50–66% depending on configuration). Bifolds are more expensive, more complex (more hinges and seals), but stack completely out of the way so you get 90%+ of the opening clear when open. Berwick rule of thumb: if you use the back yard every day in summer and want true indoor-outdoor living for entertaining, bifold. If you mostly use the door for foot traffic to a deck and want the cleanest look when closed, slider or stacker. We install both — happy to walk through the trade-offs on site." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which sliding door hardware do you use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tier-1 manufacturer hardware throughout — Trend, Stegbar, AWS and Wideline all use heavy-duty stainless steel tandem-roller carriage systems rated for the panel weight (residential doors run 60–120kg per panel for big stackers). Lock-and-handle sets are typically Whitco or Doric for the residential range; we upgrade to Lockwood Vista or similar on premium specs. All rollers are adjustable from the factory and we run them in at handover so the door glides smoothly and seals against the jamb properly." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will a new sliding door make my house warmer in winter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — particularly if it's replacing an old single-glaze door with worn perimeter seals. Old 90s and early 2000s sliders typically have hardened brush-pile seals that no longer touch the frame properly, plus single-glazed glass that conducts heat out at roughly 6× the rate of double-glazing. Replacing with a modern double-glazed door with new wool-pile and bulb seals cuts heat loss through that opening by 50–70%. On a typical Berwick living-room slider (5m² of glass), that's a real difference in evening comfort and a measurable drop in heating bills." }
+    }
+  ]
+};
+---
+<Layout
+  title="Sliding Doors Berwick | Stacker & Standard | 2m–6m | (03) 9003 0108"
+  description="Sliding door replacement across Berwick, Cranbourne, Narre Warren. Standard 2-panel, 3-panel stacker, 4-panel stacker. 2m to 6m openings. Trend, Stegbar, AWS. Double-glaze and thermally broken options."
+  canonical="https://berwickwindowreplacement.com.au/services/sliding-doors/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">2m to 6m openings</span>
+      <h1>Sliding doors in <span class="accent">Berwick &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Standard 2-panel sliders, 3-panel stackers, 4-panel and custom
+        configurations up to 6m wide. The default indoor-outdoor opening
+        for Casey homes &mdash; slim sightlines, weather-tight, and the
+        easiest big door to live with day-to-day.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free measure</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Sliding door configurations &amp; price bands.</h2>
+      <div style="max-width: 65rem;">
+        <ul style="line-height:1.8;">
+          <li><strong>2-panel slider, 2.4m:</strong> One fixed, one slides. $2,500&ndash;$4,000 installed. The standard 90s&ndash;2000s rear door.</li>
+          <li><strong>2-panel slider, 3.0m:</strong> $3,000&ndash;$4,500 installed.</li>
+          <li><strong>3-panel stacker, 3.6m:</strong> One fixed, two slide (stack behind each other). $4,500&ndash;$6,500 installed.</li>
+          <li><strong>3-panel stacker, 4.2m:</strong> $5,500&ndash;$7,500 installed.</li>
+          <li><strong>4-panel stacker, 4.8m:</strong> Two fixed centre, two slide outward. $6,500&ndash;$9,000 installed.</li>
+          <li><strong>Custom configurations, 5m&ndash;6m:</strong> From $8,000. Multi-panel, corner-meet (two doors meeting at 90&deg; with no corner post), pocket-slide (panels disappear into the wall cavity).</li>
+        </ul>
+        <p style="margin-top:1rem;color:var(--c-muted);">Add 25&ndash;40% for double-glazing across all configurations. Thermally broken frames add 15&ndash;30%.</p>
+
+        <h3 style="margin-top: 2rem;">Standard slider vs stacker explained.</h3>
+        <p>
+          <strong>Standard 2-panel slider:</strong> One panel fixed in the
+          frame, one panel slides along the track. You can open half the
+          total width. Cheapest, simplest, most weather-tight because
+          there&rsquo;s only one moving seal.
+        </p>
+        <p>
+          <strong>3-panel stacker:</strong> One fixed, two slide. When fully
+          open the two sliding panels stack one behind the other behind the
+          fixed panel &mdash; so you get roughly two-thirds of the total
+          width as clear opening. The standard upgrade from a 2.4m to 3.6m
+          opening.
+        </p>
+        <p>
+          <strong>4-panel stacker:</strong> Two fixed in the centre, two
+          slide outward to each side. Half the total width opens, but you
+          get a clean unobstructed view through the middle pair when closed
+          (no central mullion).
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why owners upgrade from 2.4m to 3.6m.</h3>
+        <p>
+          The standard builder-spec 2.4m rear sliding door from a
+          90s&ndash;2000s Casey build looks narrow by current standards
+          and gives a poor indoor-outdoor connection. Upgrading to a
+          3.6m or 4.2m stacker is the single biggest lifestyle
+          improvement on a typical Berwick or Cranbourne East home. It
+          requires removing brickwork on each side of the existing
+          opening, installing a steel lintel to carry the load above the
+          new wider span, and patching the brick course around the new
+          frame. All-in budget for the opening modification plus a new
+          3.6m stacker: $5,000&ndash;$8,000.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Seals, rollers, hardware.</h3>
+        <ul>
+          <li><strong>Tandem stainless rollers:</strong> Adjustable from factory, rated for the panel weight (60&ndash;120kg per panel on big stackers).</li>
+          <li><strong>Wool pile and bulb perimeter seals:</strong> Replaced every install, no chance of an old hardened seal compromising the new door.</li>
+          <li><strong>Lock sets:</strong> Whitco or Doric standard, Lockwood Vista premium.</li>
+          <li><strong>Track:</strong> Marine-grade stainless on the bottom track for any direct-rain exposure.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we install sliding doors.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free sliding door measure-up.</h2>
+        <p>Standard, stacker or wider opening &mdash; we price all options side by side.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

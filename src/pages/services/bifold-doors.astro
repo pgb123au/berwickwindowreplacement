@@ -1,0 +1,156 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a bifold door cost in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "3-panel 3.0m aluminium bifold $5,000–$7,500 installed. 4-panel 3.6m bifold $6,000–$9,000. 5-panel 4.5m bifold $8,000–$12,000. 6-panel 5.4m bifold $10,000–$14,000. Premium thermally broken double-glazed bifolds run 30–50% above these bands. Includes opening modification if needed, supply (Centor or Brio hardware), install, perimeter sealing and patch-back." }
+    },
+    {
+      "@type": "Question",
+      "name": "Bifold vs sliding stacker — which is right for my Berwick home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bifold: panels fold concertina-style and stack 90%+ clear of the opening — true indoor-outdoor connection. Best for owners who entertain often and want the back wall to disappear when open. Downsides: more hinges and seals means more cost upfront and more maintenance long-term, bulkier sightlines when closed (every panel has a thicker frame than a slider would). Stacker slider: panels slide one behind the other — opens 60–70% of the total width but stays cleanly framed. Cheaper, lower maintenance, slightly more weather-tight. Berwick rule of thumb: if you use the back yard every day in summer, bifold; if it's mostly a view and occasional foot traffic, stacker." }
+    },
+    {
+      "@type": "Question",
+      "name": "How many panels for which opening width?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bifolds are made in odd or even panel counts. 3-panel: typically 2.4–3.0m total opening, two panels swing one way + one swings the other (or all three fold to one side on a wider opening). 4-panel: 3.0–3.9m, two-and-two split fold. 5-panel: 3.9–4.8m, three-and-two split. 6-panel: 4.8–5.7m, three-and-three. 7+ panels for the really wide pavilion-style openings. The fold-pattern (which way each panel goes) is chosen at design — depends on which side of the opening has room to stack the folded panels clear of furniture or the alfresco." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I retrofit a bifold into an existing 2.4m sliding-door opening?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, but the math usually doesn't favour it. Putting a bifold into a 2.4m opening (3-panel) is more expensive than upgrading to a wider opening with a slider would be, and you don't get the full 'opening disappears' effect on a narrow span. The bifold magic really starts at 3.6m+. If you've got a 2.4m opening and want bigger, the better-value path is usually to widen the opening to 3.6m and put a 3-panel stacker slider in there. If you're set on a bifold, plan to go to 3.6m or 4.2m at the same time." }
+    },
+    {
+      "@type": "Question",
+      "name": "What hardware do you use for bifold doors?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Top-hung Centor or Brio bifold hardware for residential — both are Australian-made industry standard for the residential bifold market. The panels hang from a robust top track (not bottom-rolling like a slider), so the bottom track is a flush threshold that you can roll a wheelchair or vacuum cleaner across. Centor in particular has a 25-year hardware warranty on residential bifolds. Lock-and-handle sets are Whitco multi-point on the lead panel, with shoot bolts on the intermediate panels into the head and sill." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are bifolds weather-tight in heavy rain?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, when properly specced. A modern aluminium bifold with double bulb seals between every panel and full perimeter sealing achieves a water-tightness rating equivalent to a standard slider. Where they fail is on cheap imports with single brush-pile seals — those leak. We only install AS 2047-compliant bifolds (Centor, Capral, Stegbar, Wideline) with multi-point compression lock and double seals. The lead panel locks into the jamb with three engagement points and the intermediate panels lock into the head and sill — when locked, water-tight under typical Berwick storm conditions." }
+    }
+  ]
+};
+---
+<Layout
+  title="Bifold Doors Berwick | Concertina-Fold Indoor-Outdoor | (03) 9003 0108"
+  description="Bifold door installation in Berwick, Cranbourne, Narre Warren — 3 to 7 panels, 3m to 6m openings. Centor and Brio hardware, AS 2047 compliant. True indoor-outdoor flow for entertaining."
+  canonical="https://berwickwindowreplacement.com.au/services/bifold-doors/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Concertina-fold indoor-outdoor flow</span>
+      <h1>Bifold doors in <span class="accent">Berwick &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Concertina-fold openings &mdash; the back wall disappears. 3, 4, 5,
+        6 or 7 panel configurations, 3m to 6m openings, Centor and Brio
+        top-hung hardware. For owners who entertain often and want a true
+        indoor-outdoor connection across the back of the house.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free measure</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Bifold configurations &amp; price bands.</h2>
+      <div style="max-width: 65rem;">
+        <ul style="line-height:1.8;">
+          <li><strong>3-panel bifold, 2.4&ndash;3.0m:</strong> $5,000&ndash;$7,500 installed.</li>
+          <li><strong>4-panel bifold, 3.0&ndash;3.9m:</strong> $6,000&ndash;$9,000 installed.</li>
+          <li><strong>5-panel bifold, 3.9&ndash;4.8m:</strong> $8,000&ndash;$12,000 installed.</li>
+          <li><strong>6-panel bifold, 4.8&ndash;5.7m:</strong> $10,000&ndash;$14,000 installed.</li>
+          <li><strong>7+ panel custom, 5.4m+:</strong> From $13,000.</li>
+        </ul>
+        <p style="margin-top:1rem;color:var(--c-muted);">Add 30&ndash;50% for thermally broken double-glazed premium spec. Add $2K&ndash;$5K if the existing opening needs widening with a new steel lintel.</p>
+
+        <h3 style="margin-top: 2rem;">Fold patterns &mdash; which way do the panels go?</h3>
+        <p>
+          Bifolds can fold all to one side, two-and-two split fold, or any
+          combination depending on panel count. The pattern is chosen at
+          design based on:
+        </p>
+        <ul>
+          <li>Where the alfresco furniture sits &mdash; you don&rsquo;t want folded panels blocking the BBQ.</li>
+          <li>Which side of the opening has wall to stack the folded panels against.</li>
+          <li>Whether one of the panels needs to operate as a single &ldquo;day door&rdquo; for everyday foot traffic without folding the whole thing open.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Day-door &amp; everyday use.</h3>
+        <p>
+          A common bifold spec includes a &ldquo;traffic door&rdquo; or
+          &ldquo;day door&rdquo; &mdash; one end panel that opens
+          independently like a regular hinged door for daily foot traffic
+          to the deck without folding the whole array open. This is the
+          right answer for families who don&rsquo;t want to fold 4 or 5
+          panels just to step outside with the dog. About 70% of our
+          Berwick bifold installs include a day door.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Top-hung hardware: why it matters.</h3>
+        <p>
+          Modern residential bifolds are top-hung &mdash; the panel weight
+          hangs from a robust top track, the bottom is just a flush
+          threshold and guide. Two advantages over old bottom-rolling
+          systems: (1) the threshold can be a low-profile flush detail that
+          you can roll a vacuum or pram across (no big track to trip on);
+          (2) the rolling parts are protected up out of weather and dirt
+          so the action stays smooth long-term. We standardise on Centor
+          and Brio &mdash; both Australian-made with 20&ndash;25 year
+          hardware warranty on residential bifolds.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Weather-tightness &amp; AS 2047.</h3>
+        <p>
+          Every bifold we install is AS 2047 compliant from a tier-1
+          manufacturer (Centor, Capral, Stegbar, Wideline). Double bulb
+          seals between every panel, multi-point compression lock on the
+          lead panel, shoot bolts top and bottom on the intermediate
+          panels. When locked, water-tight under typical Berwick rain and
+          wind conditions. The cheap-import bifolds with single brush-pile
+          seals are the ones that leak &mdash; we don&rsquo;t install
+          those.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we install bifold doors.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free bifold door measure-up.</h2>
+        <p>Honest bifold-vs-stacker advice for your opening width and lifestyle.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,149 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Window & Sliding Door Measure-Up | Berwick, Casey | (03) 9003 0108"
+  description="Free on-site window and sliding-door measure-up for Berwick, Cranbourne, Narre Warren, Hampton Park, Endeavour Hills. Per-window pricing, single vs double-glaze side by side, fixed quote within 7 days."
+  canonical="https://berwickwindowreplacement.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free measure-up</span>
+      <h1>Book your free window measure &amp; quote.</h1>
+      <p class="hero-sub">
+        Tell us about your home and what you&rsquo;re thinking. We&rsquo;ll
+        come on-site for a 45&ndash;90 minute measure-up, take every
+        opening twice, talk through aluminium vs timber, single-glaze vs
+        double-glaze, and standard slider vs stacker vs bifold. Fixed
+        per-window pricing within 7 days. Free, no obligation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Berwick 3806, Cranbourne 3977, Narre Warren 3805" />
+
+            <label for="format">What are you replacing or adding?</label>
+            <select id="format" name="format">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="whole-house">Full-house re-window (12&ndash;15 windows)</option>
+              <option value="partial">Some windows only (1&ndash;6 openings)</option>
+              <option value="kitchen-bathroom">Kitchen + bathroom awnings only</option>
+              <option value="aluminium-windows">Aluminium windows (powder-coated)</option>
+              <option value="timber-windows">Timber windows (heritage or premium)</option>
+              <option value="sliding-door">Sliding door (standard or stacker)</option>
+              <option value="bifold-door">Bifold door</option>
+              <option value="awning-window">Awning window(s)</option>
+              <option value="opening-widening">Widen existing opening (2.4m &rarr; 3.6m etc.)</option>
+            </select>
+
+            <label for="glazing">Single-glaze or double-glaze?</label>
+            <select id="glazing" name="glazing">
+              <option value="not-sure">Not sure &mdash; price both options please</option>
+              <option value="single">Single-glaze (cheaper)</option>
+              <option value="double">Double-glaze (winter comfort, no condensation)</option>
+              <option value="premium">Premium thermally broken + double-glaze</option>
+            </select>
+
+            <label for="house-age">When was the house built?</label>
+            <select id="house-age" name="house-age">
+              <option value="not-sure">Not sure</option>
+              <option value="pre-1980">Pre-1980 (heritage / steel frames)</option>
+              <option value="1980-1995">1980&ndash;1995</option>
+              <option value="1995-2010">1995&ndash;2010 (typical chalky aluminium era)</option>
+              <option value="2010-2020">2010&ndash;2020</option>
+              <option value="post-2020">Post-2020 / new build</option>
+            </select>
+
+            <label for="size">Approximate number of windows / doors</label>
+            <select id="size" name="size">
+              <option value="not-sure">Not sure</option>
+              <option value="1-3">1&ndash;3 openings</option>
+              <option value="4-7">4&ndash;7 openings</option>
+              <option value="8-12">8&ndash;12 openings (typical 3-bed)</option>
+              <option value="13-18">13&ndash;18 openings (typical 4-bed)</option>
+              <option value="19+">19+ openings (large home)</option>
+            </select>
+
+            <label for="condensation">Any winter condensation or mould on existing windows?</label>
+            <select id="condensation" name="condensation">
+              <option value="yes-bad">Yes &mdash; significant condensation / mould visible</option>
+              <option value="yes-mild">Mild &mdash; some condensation in winter</option>
+              <option value="no">No</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+
+            <label for="timeframe">When do you want it installed?</label>
+            <select id="timeframe" name="timeframe">
+              <option value="asap">ASAP &mdash; next 2 months</option>
+              <option value="3-6-months">3&ndash;6 months</option>
+              <option value="before-winter">Before next winter</option>
+              <option value="12+">12 months or longer (research stage)</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Existing frame material, known problem windows, budget range, brand preferences, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my measure-up request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030108">(03) 9003 0108</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;6pm</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full City of Casey &mdash; Berwick, Cranbourne, Narre Warren, Hampton Park, Endeavour Hills, plus Beaconsfield, Clyde North, Officer and Pakenham edge.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free on-site 45&ndash;90 minute measure-up</li>
+                <li>Per-window pricing in writing</li>
+                <li>Single vs double-glaze priced both ways</li>
+                <li>Brand samples (Trend / Stegbar / AWS) on site</li>
+                <li>Fixed-price quote within 7 days</li>
+                <li>AS 2047 compliant supply, 7&ndash;10 year warranty</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

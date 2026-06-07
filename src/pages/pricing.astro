@@ -1,0 +1,296 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does install take?", "acceptedAnswer": {"@type": "Answer", "text": "Single window: 1-2 hours. Whole home (8-12 openings): 2-4 days. Plus 4-6 weeks lead-time for manufacture."}}, {"@type": "Question", "name": "Single or double glazing?", "acceptedAnswer": {"@type": "Answer", "text": "Double — almost always worth it. 30-50% reduction in heating/cooling loss, condensation reduction, noise reduction."}}, {"@type": "Question", "name": "Aluminium or UPVC or timber?", "acceptedAnswer": {"@type": "Answer", "text": "UPVC: best thermal + acoustic per dollar; modern look. Aluminium: most popular, slim profile. Timber: heritage homes, premium look + cost."}}, {"@type": "Question", "name": "Do you measure on site?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — free measure + quote within 5 days. We don't price off photos for installation."}}, {"@type": "Question", "name": "Heritage homes — what's allowed?", "acceptedAnswer": {"@type": "Answer", "text": "Most heritage overlays require timber sash + period-correct profile. We have heritage-grade joinery and handle the permit."}}, {"@type": "Question", "name": "Can you do one window at a time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — but mobilisation cost makes whole-of-home cheaper per window."}}, {"@type": "Question", "name": "Warranty?", "acceptedAnswer": {"@type": "Answer", "text": "Frame: 10-year manufacturer. Glass: 5-year insulated glass unit warranty. Workmanship: 7 years."}}]};
+const serviceSchema = {"@context": "https://schema.org", "@type": "Service", "serviceType": "Window replacement", "provider": {"@type": "GeneralContractor", "name": "Berwick Window Replacement", "telephone": "+61390030108", "url": "https://berwickwindowreplacement.com.au", "areaServed": {"@type": "City", "name": "Berwick"}}, "areaServed": "Berwick", "url": "https://berwickwindowreplacement.com.au/pricing/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "80", "highPrice": "180000", "offerCount": "18"}};
+const breadcrumbSchema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://berwickwindowreplacement.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://berwickwindowreplacement.com.au/pricing/"}]};
+---
+<Layout
+  title="Window replacement prices in Berwick 2026 | (03) 9003 0108"
+  description="Window replacement prices in Berwick — aluminium, timber, UPVC, double-glazed. 2026 rates per opening. Call (03) 9003 0108 for a measure-quote."
+  canonical="https://berwickwindowreplacement.com.au/pricing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Aluminium, timber, double-glazed — measured + installed</span>
+      <h1>Window replacement prices in Berwick — 2026 guide</h1>
+      <p class="hero-sub">Window replacement in Berwick ranges from $580 (small bedroom window, aluminium, single-glazed) to $3,800+ (large double-glazed timber sash) per window. Whole-home replacement typically lands $18,000–$45,000 depending on number of openings, frame material, and glazing.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108" aria-label="Call (03) 9003 0108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a written quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <p class="lead">Below are realistic 2026 per-window fitted rates. We measure on-site, manufacture in Berwick, install + dispose of old. Call (03) 9003 0108 for an exact quote.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Typical 2026 prices for window replacement in Berwick</h2>
+      <p>Real ranges from our books, not made-up averages. Every quote we issue is itemised against the work below.</p>
+        <table class="pricing-table">
+          <thead><tr><th>Service</th><th>Typical range (AU 2026)</th><th>What's included</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Service"><strong>Standard aluminium window (small, single-glazed)</strong></td>
+              <td data-label="Price"><span class="price-range">$580 – $1,200</span></td>
+              <td data-label="Note">Bedroom-size, awning or sliding.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Standard aluminium window (medium)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,200 – $1,800</span></td>
+              <td data-label="Note">Living-room awning or sliding.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Standard aluminium window (large)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,800 – $2,800</span></td>
+              <td data-label="Note">Large opening, multi-panel.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Double-glazed aluminium (small)</strong></td>
+              <td data-label="Price"><span class="price-range">$880 – $1,500</span></td>
+              <td data-label="Note">20-30% premium over single.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Double-glazed aluminium (medium)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,600 – $2,400</span></td>
+              <td data-label="Note"></td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Double-glazed aluminium (large)</strong></td>
+              <td data-label="Price"><span class="price-range">$2,400 – $3,800</span></td>
+              <td data-label="Note"></td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Timber sash window (small, period-matched)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,200 – $2,400</span></td>
+              <td data-label="Note">Heritage homes.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Timber sash window (medium)</strong></td>
+              <td data-label="Price"><span class="price-range">$2,400 – $3,800</span></td>
+              <td data-label="Note"></td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>UPVC double-glazed (small)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,200 – $2,000</span></td>
+              <td data-label="Note">Best thermal performance per dollar.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>UPVC double-glazed (medium)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,800 – $3,000</span></td>
+              <td data-label="Note"></td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Sliding door (2-panel, std width)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,800 – $3,500</span></td>
+              <td data-label="Note">2.4m height, double-glazed.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Sliding door (3-panel, wide opening)</strong></td>
+              <td data-label="Price"><span class="price-range">$3,500 – $6,500</span></td>
+              <td data-label="Note">Large opening, double-glazed.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Bifold door (3-panel)</strong></td>
+              <td data-label="Price"><span class="price-range">$5,500 – $9,500</span></td>
+              <td data-label="Note">Premium opening.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Bifold door (4-6 panel)</strong></td>
+              <td data-label="Price"><span class="price-range">$9,500 – $18,500</span></td>
+              <td data-label="Note">Maximum opening.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Window measure + quote</strong></td>
+              <td data-label="Price"><span class="price-range">Free</span></td>
+              <td data-label="Note">Site visit, written quote within 5 days.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Old window removal + disposal</strong></td>
+              <td data-label="Price"><span class="price-range">Included</span></td>
+              <td data-label="Note">Standard inclusion.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Window reveal / architrave make-good</strong></td>
+              <td data-label="Price"><span class="price-range">$180 – $480 per window</span></td>
+              <td data-label="Note">Patching after removal.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Energy rating compliance assessment</strong></td>
+              <td data-label="Price"><span class="price-range">$280 – $580</span></td>
+              <td data-label="Note">BCA / BASIX / NatHERS reporting.</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="table-foot"><em>Prices indicative for Berwick in 2026. Final quote depends on your site — call (03) 9003 0108 for an exact number.</em></p>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card">
+      <div class="cta-card-body">
+        <h3>Need an exact price for your job?</h3>
+        <p>Most quotes ready within 24 hours of the site visit. No-obligation, free, written.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Online quote form</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What changes the price on your job</h2>
+      <p>The ranges above are the starting point. These five factors are what move a quote up or down within (or sometimes outside) those bands.</p>
+        <ol class="numbered-list">
+          <li>Frame material — aluminium cheapest, timber premium, UPVC mid (best insulation).</li>
+          <li>Single vs double glazing — double adds 20-30% but cuts thermal loss 60%.</li>
+          <li>Window size + style — awning + sliding cheaper than custom shapes (round, arched).</li>
+          <li>Heritage requirements — heritage zones often require timber sash + period-correct glazing.</li>
+          <li>Volume — whole-home (10+ openings) gets 15-25% off per-window rate.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-warn">
+    <div class="section-inner">
+      <h2>Red flags &mdash; what to watch for in quotes</h2>
+      <p>We see these patterns every week from operators we'd never recommend. If a quote you've received contains one of these, ask before signing.</p>
+        <ul class="bullet-list">
+          <li>Quotes without removal + disposal — surprise $800+ at end of job.</li>
+          <li>Cheap-end aluminium without thermal break — same as no insulation. Avoid sub-$500 per window.</li>
+          <li>No energy rating on whole-home replacements — BASIX/BCA non-compliant.</li>
+          <li>Frameless / frameless-look quotes that turn out to be wide-frame — see a sample before deposit.</li>
+          <li>Bifold quotes without floor-track waterproofing — leaks within 2 years.</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How to get an accurate quote in 5 minutes</h2>
+      <p>Have the following ready when you call (03) 9003 0108 (or jot it on the quote form) and we can give you a real number in one call, not five.</p>
+        <ol class="numbered-list">
+          <li>Number of windows + rough sizes.</li>
+          <li>Style preference (awning / sliding / casement / sash).</li>
+          <li>Glazing preference (single / double / acoustic).</li>
+          <li>Frame material preference.</li>
+          <li>Heritage / planning zone restrictions.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q"><strong>How long does install take?</strong></summary>
+          <div class="faq-a">Single window: 1-2 hours. Whole home (8-12 openings): 2-4 days. Plus 4-6 weeks lead-time for manufacture.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Single or double glazing?</strong></summary>
+          <div class="faq-a">Double — almost always worth it. 30-50% reduction in heating/cooling loss, condensation reduction, noise reduction.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Aluminium or UPVC or timber?</strong></summary>
+          <div class="faq-a">UPVC: best thermal + acoustic per dollar; modern look. Aluminium: most popular, slim profile. Timber: heritage homes, premium look + cost.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Do you measure on site?</strong></summary>
+          <div class="faq-a">Yes — free measure + quote within 5 days. We don't price off photos for installation.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Heritage homes — what's allowed?</strong></summary>
+          <div class="faq-a">Most heritage overlays require timber sash + period-correct profile. We have heritage-grade joinery and handle the permit.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Can you do one window at a time?</strong></summary>
+          <div class="faq-a">Yes — but mobilisation cost makes whole-of-home cheaper per window.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Warranty?</strong></summary>
+          <div class="faq-a">Frame: 10-year manufacturer. Glass: 5-year insulated glass unit warranty. Workmanship: 7 years.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card cta-card-primary">
+      <div class="cta-card-body">
+        <h3>Ready for an exact quote on your Berwick job?</h3>
+        <p>Free written quotes. No obligation. Same-day callbacks on most enquiries.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary btn-large" href="tel:+61390030108" aria-label="Call (03) 9003 0108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost btn-large" href="/quote/">Get a quote online</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+    .lead { font-size: 1.125rem; line-height: 1.7; max-width: 70rem; margin: 0 auto; color: var(--text, #1f2937); }
+    .section-tint { background: rgba(0, 0, 0, 0.025); }
+    .section-warn { background: rgba(180, 100, 0, 0.04); }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .pricing-table thead { background: #1f2937; color: #fff; }
+    .pricing-table th { padding: 0.85rem 1rem; text-align: left; font-weight: 600; font-size: 0.95rem; }
+    .pricing-table td { padding: 0.85rem 1rem; border-top: 1px solid #e5e7eb; vertical-align: top; }
+    .pricing-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+    .pricing-table .price-range { font-weight: 600; color: #047857; white-space: nowrap; }
+    .table-foot { font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem; }
+    @media (max-width: 640px) {
+      .pricing-table thead { display: none; }
+      .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+      .pricing-table tr { border-bottom: 2px solid #e5e7eb; padding: 0.75rem 0; }
+      .pricing-table td { border: none; padding: 0.35rem 0.5rem; }
+      .pricing-table td:before { content: attr(data-label) ": "; font-weight: 600; color: #6b7280; display: inline-block; min-width: 5rem; }
+      .pricing-table td:first-child:before { display: none; }
+    }
+    .numbered-list, .bullet-list { max-width: 65rem; margin: 1rem 0; padding-left: 1.5rem; line-height: 1.7; }
+    .numbered-list li, .bullet-list li { margin: 0.65rem 0; }
+    .cta-card-section { padding: 2rem 1rem; }
+    .cta-card {
+      max-width: 56rem; margin: 0 auto;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+      padding: 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .cta-card-primary { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .cta-card-primary h3 { color: #fff; }
+    .cta-card-body { flex: 1 1 24rem; }
+    .cta-card-body h3 { margin: 0 0 0.4rem 0; font-size: 1.35rem; line-height: 1.3; }
+    .cta-card-body p { margin: 0; }
+    .cta-card-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .btn-large { padding: 0.85rem 1.5rem; font-size: 1.05rem; }
+    .faq-list { max-width: 60rem; margin: 1rem auto; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0; }
+    .faq-item[open] { background: rgba(0,0,0,0.02); }
+    .faq-q { cursor: pointer; padding: 0.4rem 0.5rem; font-size: 1.05rem; }
+    .faq-q:hover { color: #047857; }
+    .faq-a { padding: 0.65rem 0.5rem 0.85rem 0.5rem; line-height: 1.7; color: #4b5563; }
+
+  </style>
+</Layout>

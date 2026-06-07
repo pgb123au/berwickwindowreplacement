@@ -1,0 +1,263 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who do I book first — the window installer or the painter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Window installer first, painter second. Replacing a window almost always damages the surrounding paint line — the old architraves get pried, the reveal gets touched up with sealant, and the new frame's flanges sit slightly differently. The painter then comes in, makes good the damaged sections and rolls a fresh coat. Doing it the other way around (paint first, then windows) means paying the painter to come back. The exception is full-house repaint where the windows are already locked in — then you can scaffold once and both trades work in parallel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will replacing my Berwick windows void anything on my garage door?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not the garage door itself, but it can affect the BAL (Bushfire Attack Level) and energy rating of the whole house if your Berwick property sits in a bushfire-prone area (parts of Berwick-Beaconsfield foothills are BAL-12.5 or BAL-19). New windows have to match or exceed the BAL rating of the existing envelope. The garage door, side glazing and any roller-door glass need to be on the same standard — AS 3959 requires consistency. If you're replacing windows alongside a new sectional or panel-lift garage door, share the BAL certificate between trades so both products match."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I retrofit double glazing without replacing the whole window?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On many Berwick aluminium frames, yes — IGU (insulated glazing unit) retrofit swaps just the glass and seals while keeping the existing frame. Cost is 40–60% of a full window replacement and the energy performance lift is similar (U-value drops from ~5.5 down to ~2.7). The catch: older single-glazed frames weren't designed for the extra weight of an IGU, so the frame, sash and hinges have to be inspected first. Timber frames usually retrofit well; thin aluminium frames sometimes don't. We assess and tell you honestly which way is better value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a building permit to replace windows in City of Casey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Like-for-like replacement (same size, same opening type) is usually permit-exempt under Schedule 3 of the Building Regulations. Changing the opening size, adding a new window, or converting a sliding door to French doors triggers a building permit through a private surveyor and lodgement with City of Casey. Heritage overlays (parts of Berwick Village) add a planning permit requirement on top — you can't change window style or frame colour without council approval. We check the overlay before quoting and lodge the permit if needed."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Local Trades in City of Casey: Window Replacement & the Trades it Works With | Berwick Window Replacement"
+  description="How window and sliding door replacement sits alongside garage doors, painters and double glazing in Berwick and the City of Casey — BAL ratings, AS 2047 install standards, heritage overlay considerations and council references."
+  canonical="https://berwickwindowreplacement.com.au/local-trades/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Local trades &amp; the building envelope</span>
+      <h1>The <span class="accent">Casey trades</span> that work alongside a window replacement.</h1>
+      <p class="hero-sub">
+        Replacing windows touches more trades than most owners expect &mdash;
+        the painter has to make good the reveals, the garage door has to share
+        the same BAL rating, and a glazing upgrade only delivers its full
+        energy lift when the rest of the envelope is sealed too. Here&rsquo;s
+        how the trades line up in Berwick and the City of Casey.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free window quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">The envelope team</span>
+      <h2>Trades on a typical Berwick window replacement.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          A window replacement looks self-contained until you start
+          pulling the old frame out. Suddenly the architrave needs
+          patching, the reveal needs sealing, the paint line is broken,
+          and if you&rsquo;re upgrading to double glazing the whole
+          envelope story comes into play. Here are the trades we
+          coordinate with most often on Casey jobs.
+        </p>
+
+        <h3 style="margin-top:2rem;">Double glazing &amp; IGU specialists.</h3>
+        <p>
+          Many Berwick homes from the 1990s and early 2000s have aluminium
+          frames that will accept a retrofit IGU &mdash; swapping the
+          single pane out for a double-glazed unit while keeping the
+          frame in place. The team at
+          <a href="https://doubleglazingsoutheast.com.au/" target="_blank" rel="external noopener">Double Glazing Southeast</a>
+          handle that specialist retrofit work across the Casey corridor.
+          They&rsquo;ll assess whether the existing frame can take the
+          extra weight (about 2.5x a single pane), check the seals and
+          hinges, and quote a glass-only upgrade where it makes sense.
+          For frames that can&rsquo;t accept the retrofit, we replace the
+          whole window instead. Sharing the assessment between both
+          trades means owners get the cheaper option when it&rsquo;s
+          viable, instead of being upsold to full replacement
+          automatically.
+        </p>
+
+        <h3 style="margin-top:2rem;">Garage doors &amp; shared safety glazing.</h3>
+        <p>
+          A garage door isn&rsquo;t a window trade &mdash; but in bushfire
+          attack zones (BAL-12.5 or higher across parts of
+          Berwick-Beaconsfield, Endeavour Hills foothills) the garage
+          door panels, side glazing and any internal access door have to
+          share the same BAL compliance as the windows. When owners
+          replace both at once we coordinate with
+          <a href="https://cranbournegaragedoorco.com.au/" target="_blank" rel="external noopener">cranbournegaragedoorco.com.au</a>
+          so the BAL certificates align across the whole envelope. They
+          also do the side-panel safety glass (Grade A toughened to AS
+          2208) that sits beside sectional garage doors &mdash; same
+          standard as the windows we install. One supplier, one
+          certificate, one paperwork bundle &mdash; cleaner for the owner
+          and the building surveyor at sign-off.
+        </p>
+
+        <h3 style="margin-top:2rem;">House painters &amp; trim repaint.</h3>
+        <p>
+          Every window replacement damages the surrounding paint line.
+          The architrave gets pried, the reveal needs new sealant, the
+          flange of the new frame doesn&rsquo;t sit identically to the
+          old one. We do basic make-good (sand, prime, sealant) on the
+          immediate reveal but for a clean finish across the whole
+          architrave and adjoining wall the painter has to come back.
+          <a href="https://pakenhamhousepainters.com.au/" target="_blank" rel="external noopener">Local painters in Pakenham</a>
+          handle the post-install trim repaint on a lot of our jobs
+          &mdash; they prep the disturbed sections, blend into the
+          existing wall colour, and roll a fresh coat over the touched
+          areas. Booking the painter for two days after our install gives
+          the sealant time to cure properly before paint goes over it.
+          Skip this step and you see the patch line for years.
+        </p>
+
+        <h3 style="margin-top:2rem;">Plasterer &amp; reveal repair.</h3>
+        <p>
+          On older Berwick homes with plaster reveals (rather than
+          aluminium-clad reveals on modern builds) the plasterer comes in
+          between us and the painter. Removing an old timber-framed
+          window often takes a chunk of the plaster reveal with it,
+          especially if the original install used hard nail-fixings
+          straight through the lining. The plasterer patches with
+          fibreglass mesh and a base coat, two skim coats over the top,
+          then the painter takes over. Adds a day to the project but
+          gives a flat finish.
+        </p>
+
+        <h3 style="margin-top:2rem;">Building surveyor (for non-like-for-like).</h3>
+        <p>
+          A like-for-like window swap is permit-exempt. Changing the
+          opening size, adding a window, converting a sliding door to
+          French doors, or installing in a heritage overlay zone all
+          require a private building surveyor to issue a permit. We
+          engage one on jobs that need it &mdash; same surveyor we use
+          for the carport and decking trades, so the paperwork flows
+          through one office.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f9fafb;">
+    <div class="section-inner">
+      <span class="section-eyebrow">Council, standards &amp; references</span>
+      <h2>City of Casey references and the standards behind every install.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          Windows sit at the intersection of energy, safety, bushfire and
+          heritage codes. These are the references owners ask about most,
+          and the standards we install to on every job regardless of who
+          quoted the cheapest.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>City of Casey</strong> &mdash; building permits,
+            heritage overlay maps for Berwick Village, planning permits
+            for non-like-for-like changes.
+            <a href="https://www.casey.vic.gov.au/" target="_blank" rel="external noopener">casey.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 2047 &mdash; Windows in buildings</strong> &mdash;
+            the install standard. Specifies water-penetration resistance,
+            air-infiltration limits, structural wind loading and operating
+            force tests. Every window we install carries an AS 2047
+            compliance label.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">Standards Australia</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 1288 &mdash; Glass in buildings</strong> &mdash; the
+            standard for glass thickness, safety-glazing locations, and
+            human-impact protection. Anything within 500mm of the floor
+            in a habitable room must be Grade A toughened or laminated.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">Standards Australia</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 3959 &mdash; Construction in bushfire-prone areas</strong>
+            &mdash; the standard that drives BAL ratings. Parts of Berwick
+            (foothill blocks) sit at BAL-12.5 or BAL-19. Windows in those
+            zones need specific glazing, screens and frame ratings. Check
+            your block&rsquo;s BAL via the CFA map before quoting.
+            <a href="https://www.cfa.vic.gov.au/plan-prepare/bushfire-attack-level-bal-ratings" target="_blank" rel="external noopener">CFA &mdash; BAL ratings</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>NCC Volume 2 &mdash; Energy efficiency</strong> &mdash;
+            sets minimum U-values and SHGC (Solar Heat Gain Coefficient)
+            for new windows in major renovations. Casey sits in Climate
+            Zone 6, where double glazing is the practical baseline.
+            <a href="https://ncc.abcb.gov.au/" target="_blank" rel="external noopener">ncc.abcb.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Victorian Building Authority (VBA)</strong> &mdash;
+            registered builder lookup. Any window job over $10K must be
+            done by a registered builder. Verify before paying a deposit.
+            <a href="https://www.vba.vic.gov.au/" target="_blank" rel="external noopener">vba.vic.gov.au</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">More on what we install</span>
+      <h2>Window and sliding door services across Casey.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          The trade ecosystem is half the picture &mdash; the actual
+          glazing, frame and operating-type choice is the other half.
+          These pages cover the options we install most often on Casey
+          jobs.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li><a href="/services/aluminium-windows/">Aluminium windows</a> &mdash; powder-coated, double-glazed, AS 2047 compliant</li>
+          <li><a href="/services/timber-windows/">Timber windows</a> &mdash; cedar, meranti, heritage-style</li>
+          <li><a href="/services/sliding-doors/">Sliding doors</a> &mdash; aluminium and timber, double-track and triple-track</li>
+          <li><a href="/services/bifold-doors/">Bifold doors</a> &mdash; for indoor-outdoor flow</li>
+          <li><a href="/services/awning-windows/">Awning windows</a> &mdash; secondary glazing and ventilation</li>
+          <li><a href="/berwick/">Berwick window replacement</a> &mdash; primary service area</li>
+          <li><a href="/city-of-casey/">All City of Casey</a> &mdash; Cranbourne, Narre Warren, Endeavour Hills, Hampton Park</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--ink, #0F2A47);color:#fff;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Free quote &mdash; honest Berwick window pricing.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Aluminium, timber and double-glazed window replacement across
+        Berwick and the City of Casey. AS 2047 install compliance, AS
+        1288 safety glazing, BAL-rated options for bushfire zones, City
+        of Casey permits coordinated when needed.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>

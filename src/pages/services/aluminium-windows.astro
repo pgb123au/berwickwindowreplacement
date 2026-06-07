@@ -1,0 +1,151 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a single aluminium window cost installed in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard single-glaze aluminium windows installed in Berwick run $400–$1,200 each depending on size and style. Awning windows up to 900mm sit at $450–$700, double-hung at $550–$900, sliding windows at $600–$1,000, and large fixed picture panes $700–$1,200. Double-glaze adds $300–$500 per window. Prices include removal of the old frame, AS 2047–compliant supply, install, perimeter sealing and architrave patch-back." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which aluminium window brands do you install?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Trend, Stegbar, AWS (Architectural Window Systems), Wideline and Capral — the tier-1 Australian residential window manufacturers. All ship AS 2047 stamped, all have 7–10 year warranty on the frame and 10–20 years on the IGU seal for double-glazed units. We bring sample frames to the measure-up so you can feel the slide action and frame depth before committing." }
+    },
+    {
+      "@type": "Question",
+      "name": "What window styles are available in aluminium?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sliding (horizontal slide, the most common for bedrooms), awning (top-hinged outward open — great for kitchens, bathrooms, weather-tight when open in light rain), double-hung (two vertical sashes that slide up and down — common in heritage-style new builds), casement (side-hinged outward open), fixed (no operable sash, picture panes), louvre (multiple horizontal slats — bathrooms, laundries) and tilt-and-turn (European-style inward open with two operating modes — premium spec). We carry all of these in standard powder coat colours." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is aluminium a good choice for energy efficiency?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aluminium frames are thermally conductive — that's the downside. A single-glazed aluminium window has poor U-value and is the worst part of most house envelopes. The answer isn't to switch material; it's to switch to thermally broken aluminium frames with double-glazed IGUs. A thermally broken frame inserts a polyurethane or polyamide bridge between the inside and outside aluminium sections, breaking the cold-conduction path. Combined with double-glazing the U-value drops to 2.5–3.5 (versus 6–7 for single-glaze standard aluminium) — comfortable, condensation-free, comparable to good timber-framed windows but at lower cost and zero maintenance." }
+    },
+    {
+      "@type": "Question",
+      "name": "Powder coat colour options for aluminium frames?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard colours from Dulux and Interpon ranges — most popular for Berwick are Surfmist (off-white), Monument (dark charcoal-grey, very on-trend for new builds), Woodland Grey, Black, Pearl White and Anodised Silver. Custom colours add $80–$150/window. Most 1990s Berwick stock is the original white powder coat, and most owners upgrade to Monument or Surfmist as part of the replacement — instant visual upgrade on the street." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an aluminium window installation take in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A single window swap is 1–2 hours including reveal patch-back. A whole-house re-window of 12–15 windows takes 2–4 days on site. The crew stages the work so the house is weather-sealed every night — out with the old, in with the new, perimeter sealed, same day. We don't leave openings boarded up overnight." }
+    }
+  ]
+};
+---
+<Layout
+  title="Aluminium Windows Berwick | Powder-Coated, Double-Glaze, AS 2047 | (03) 9003 0108"
+  description="Aluminium window replacement across Berwick, Cranbourne, Narre Warren — powder-coated frames, sliding, awning, double-hung. Trend, Stegbar, AWS. AS 2047 stamped, double-glaze upgrades. $400–$1,200/window installed."
+  canonical="https://berwickwindowreplacement.com.au/services/aluminium-windows/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">$400&ndash;$1,200 per window installed</span>
+      <h1>Aluminium windows in <span class="accent">Berwick &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Powder-coated aluminium &mdash; sliding, awning, double-hung,
+        casement, fixed. The default Berwick window for nine out of ten
+        replacement jobs. Slim sightlines, AS 2047 compliant, low
+        maintenance, 7&ndash;10 year warranty.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free measure</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The five aluminium window brands we install.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Trend (AUS):</strong> Big residential range, very strong sliding and stacker products, deep stack of factory colour options. Frame warranty 7 years, IGU 10 years. ~$450&ndash;$1,100/window installed.</li>
+          <li><strong>Stegbar (AUS):</strong> National brand with good sliding and double-hung profiles, solid mid-market value. Frame warranty 10 years. ~$500&ndash;$1,150/window.</li>
+          <li><strong>AWS (Architectural Window Systems):</strong> Higher-end, thermally broken frames available, premium sliding-door range. Frame warranty 10 years. ~$650&ndash;$1,400/window.</li>
+          <li><strong>Wideline (AUS):</strong> Good awning and casement range, mid-market price. ~$450&ndash;$1,000/window.</li>
+          <li><strong>Capral (AUS):</strong> The aluminium extrusion supplier behind several local fabricators &mdash; quality is the extrusion section, finish and warranty depend on the local fabricator. ~$400&ndash;$950/window.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Window styles &mdash; what goes where.</h3>
+        <ul>
+          <li><strong>Sliding:</strong> Bedrooms, living rooms, anywhere the wall has room to slide a panel sideways. Standard Berwick default.</li>
+          <li><strong>Awning:</strong> Top-hinged, outward open. Kitchens (over the sink), bathrooms, laundries. Can be left open in light rain.</li>
+          <li><strong>Double-hung:</strong> Vertical sliding sash &mdash; the traditional Australian window. Looks great on Edwardian and Federation-style new builds. Slightly higher price.</li>
+          <li><strong>Casement:</strong> Side-hinged outward open. Best ventilation for any given opening size. Good for narrow tall openings.</li>
+          <li><strong>Fixed (picture):</strong> No operable sash &mdash; pure glass. Stairwell wall windows, lounge feature panes.</li>
+          <li><strong>Louvre:</strong> Stacked horizontal glass slats. Wet areas, classic Queenslander-style ventilation.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why aluminium dominates Berwick replacements.</h3>
+        <p>
+          About 90% of our Berwick jobs end up with aluminium frames.
+          Three reasons:
+        </p>
+        <ul>
+          <li><strong>Like-for-like.</strong> The original windows were aluminium &mdash; matching the material keeps the architrave details, sill heights and proportions consistent with the rest of the house.</li>
+          <li><strong>Price.</strong> Aluminium is the lowest cost-per-window of any properly-rated frame material. A timber equivalent costs 60&ndash;100% more.</li>
+          <li><strong>Maintenance.</strong> Modern powder-coated aluminium doesn&rsquo;t fade, doesn&rsquo;t rust (in residential exposure), doesn&rsquo;t need repainting. Hose-clean every few years and that&rsquo;s it.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Thermally broken frames for the premium spec.</h3>
+        <p>
+          Standard aluminium frames are a thermal bridge &mdash; they conduct
+          cold through from outside to inside. A thermally broken frame
+          inserts a polyurethane bridge between the inner and outer aluminium
+          sections, breaking that path. Combined with double-glazing the
+          frame is roughly as thermally efficient as a uPVC or timber frame
+          at much lower cost. Premium upgrade of $250&ndash;$400 per window
+          over standard aluminium &mdash; worth it for living rooms and
+          bedrooms, less critical for laundries and toilets.
+        </p>
+
+        <h3 style="margin-top: 2rem;">AS 2047 compliance &amp; warranty.</h3>
+        <p>
+          Every aluminium window we install ships AS 2047 stamped &mdash;
+          that&rsquo;s the Australian Standard covering structural wind load,
+          water tightness, glass safety (per AS 1288) and operating force.
+          Frame warranty is typically 7&ndash;10 years; IGU (insulated glass
+          unit) seal warranty on double-glazed units is 10&ndash;20 years
+          depending on the manufacturer. We register the warranty in your
+          name at handover.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we install aluminium windows.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free aluminium window measure-up.</h2>
+        <p>Brand and colour samples on site. Per-window pricing on the spot.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
